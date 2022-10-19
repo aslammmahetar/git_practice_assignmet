@@ -1,28 +1,29 @@
-// for prime number
+// Checking weathr a number is prime or not.
 
 let num = 13;
 let count = 0;
-for (let i = 1; i < 13; i++) {
+for (let i = 1; i <= 13; i++) {
   if (num % i == 0) {
     count++
   }
 }
-if (count == 0) {
-  console.log("it ia an prime number")
+if (count == 2) {
+  console.log(num,"ia a prime number");
 }
 else {
-  console.log("Not a prime number")
+  console.log(num,"is not a prime number");
 }
 
-// palindrom
+
+// Checking weather an string is palindrome or not.
 
 let string = "naman";
 
-for (let i = string.length-1;i>=0;i++){
+for (let i = string.length-1;i>=0;i--){
 
-bag = bag + i;
+bag = bag + string[i];
 }
-if (string = bag){
+if (string == bag){
 console.log("it is palindrom")
 }
 else {
